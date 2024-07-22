@@ -52,6 +52,31 @@
         </section>
 
         <hr>
+            
+        <form action="/submit" method="post">
+            <fieldset>
+                <legend class="legend">Preferred communication method:</legend>
+                
+                <div>
+                    <input type="radio" id="email" name="contact" value="email" checked>
+                    <label for="email">Email</label>
+                </div>
+                
+                <div>
+                    <input type="radio" id="txt" name="contact" value="txt">
+                    <label for="txt">Texting</label>
+                </div>
+                
+                <div>
+                    <input type="radio" id="phone" name="contact" value="phone">
+                    <label for="phone">Phone</label>
+                </div>
+                
+                <div>
+                    <input type="submit" value="Submit">
+                </div>
+            </fieldset>
+        </form>
 
         <script src="" async defer></script>
     </body>
