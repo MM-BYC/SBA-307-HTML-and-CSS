@@ -1,0 +1,205 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to right, rgb(175, 175, 233), #5f91ed);
+}
+
+.nav-bar {
+  /* border:5px solid blue;  */
+  /* background-color: rgb(24, 23, 23); */
+}
+
+.nav-ul {
+  /* border: 5px solid red; */
+  margin: 0 0; /* sets the margin of the container to auto centered*/
+  display: flex;
+  align-items: center;
+}
+.nav-li {
+  /* border: 5px solid black; */
+  padding: 10px 20px;
+  color: rgb(0, 5, 5);
+  /* display: block;  */
+}
+li {
+  /* border: 5px solid magenta; */
+  list-style: none;
+  /* margin: 0 10px; */
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: 2em;
+}
+li > img.logo {
+  width: 300px;
+}
+#my-account {
+  margin-left: auto;
+}
+
+/*---- section parent ----*/
+.section1 {
+  margin: 2em 0;
+  /* border: 5px solid black; */
+}
+.p1,
+.p2 {
+  padding-left: 100px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: white;
+}
+
+.p1 {
+  font-size: 3.5em;
+  /* border: 5px solid green; */
+  width: 30%;
+  margin: 0 auto;
+}
+.p2 {
+  font-size: 2.2em;
+}
+
+/*-- section2 --*/
+.section2-parent {
+  border: 5px solid chocolate;
+  display: flex;
+  justify-content: space-evenly;
+}
+.section2-p3 {
+  border: 5px solid black;
+  width: 25%;
+  color: white;
+  /* margin-right: auto;
+    margin-left: 100px; */
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 2.2em;
+  font-weight: bold;
+}
+/*--target the img templates --*/
+.newsletter-child > img,
+.sale-child > img,
+.finance-child > img {
+  border: 5px solid black;
+  margin: 20px;
+  width: 200px;
+  height: 300px;
+}
+
+/*--  template (sub parent)-- */
+.template {
+  display: flex;
+  flex-direction: column;
+}
+
+/*-- children of template--*/
+.newsletter-text,
+.sale-text,
+.finance-text {
+  /* border: 5px solid magenta; */
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 2.2em;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: underline;
+}
+.newsletter-child,
+.sale-child,
+.finance-child {
+  /* border: 5px solid green; */
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 2.2em;
+  font-weight: bold;
+}
+/*-- hover effect on 
+    navigation bar
+    template> newsletter-text;
+    template> sale-text and template>finance-text -- */
+.nav-ul>#solutions:hover, 
+.nav-ul>#pricing:hover,    
+.nav-ul>#my-account:hover,    
+
+.template>.newsletter-text:hover,
+.template>.sale-text:hover,
+.template>.finance-text:hover   {
+    font-size: 30px; /* Increase font size on hover */
+    background-color: bisque
+}
+ 
+
+/*-- button-container --*/
+.section2-p3>button {
+    display: block; /* Ensure it takes the full width available */
+    width: 30%;
+    margin-top: 30px; /* Add some space 
+    between the text and the button */
+    /* centers the button with margin-left = margin-right = auto*/
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px 20px;
+    font-size: 1em;
+    background-color: #a0af4c;
+    box-shadow: 0 2px #666;
+
+    color: black;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+
+
+/*-- footer -- */
+.rights {
+    display:flex;
+    justify-content: space-between;
+  }
+.copyright {
+  font-size: 1.5em;
+  color: black;
+}
+.powered {
+  font-size: 1.5em;
+  color: black;
+}
+
+/* dropdown*/
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px black;
+  z-index: 1;
+  top: 100%; /* Position below the dropdown button */
+  left: 0;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #5f91ed;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .nav-li {
+  background-color: bisque;
+}
+
+.nav-li {
+  padding: 10px 20px;
+  color: aqua;
+  display: inline-block;
+  text-decoration: none; }
