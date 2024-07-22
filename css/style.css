@@ -42,16 +42,16 @@ li > img.logo {
   /* border: 5px solid black; */
 }
 .p1,
-.p2 {
-  padding-left: 100px;
+.animationchild2 {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   color: white;
 }
 
-.p1 {
+.animationchild2 {
   font-size: 3.5em;
   /* border: 5px solid green; */
-  width: 30%;
+  /* width: 80%; */
+  flex: 1;
   margin: 0 auto;
 }
 .p2 {
@@ -60,12 +60,12 @@ li > img.logo {
 
 /*-- section2 --*/
 .section2-parent {
-  border: 5px solid chocolate;
+  /* border: 5px solid chocolate; */
   display: flex;
   justify-content: space-evenly;
 }
 .section2-p3 {
-  border: 5px solid black;
+  /* border: 5px solid black; */
   width: 25%;
   color: white;
   /* margin-right: auto;
@@ -123,7 +123,6 @@ li > img.logo {
     font-size: 30px; /* Increase font size on hover */
     background-color: bisque
 }
- 
 
 /*-- button-container --*/
 .section2-p3>button {
@@ -203,3 +202,17 @@ li > img.logo {
   color: aqua;
   display: inline-block;
   text-decoration: none; }
+
+
+.animation {
+  display:flex;justify-content:center;
+  /* border: 5px solid black; */
+}
+/* animationchild1 is you got mail animation */
+.animationchild1>.yougotmail {
+  /* border: 5px solid black; */
+  width:220px;height:180px;
+}
+.animationchild2{
+  /* border: 5px solid black;  */
+  padding-top: 15px;}
