@@ -202,13 +202,11 @@ li > img.logo {
   color: aqua;
   display: inline-block;
   text-decoration: none; }
-
-
 .animation {
   display:flex;justify-content:center;
   /* border: 5px solid black; */
 }
-/* animationchild1 is you got mail animation */
+/* animationchild1 is the you got mail animation */
 .animationchild1>.yougotmail {
   /* border: 5px solid black; */
   width:220px;height:180px;
